@@ -1,0 +1,134 @@
+/* History (Recent QR Codes) styles */
+
+.history {
+  margin-top: 12px;
+}
+
+.history__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+
+.history__title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.history__clear {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  padding: 6px 12px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-full);
+  transition: color 0.15s ease, border-color 0.15s ease, background 0.15s ease;
+}
+
+.history__clear:hover {
+  color: var(--error);
+  border-color: var(--error);
+  background: var(--error-soft);
+}
+
+.history__empty {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  padding: 18px;
+  text-align: center;
+  border: 1px dashed var(--border);
+  border-radius: var(--radius-md);
+}
+
+/* --- List --- */
+.history__list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.history__item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 10px 12px;
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  transition: border-color 0.15s ease, transform 0.15s ease;
+}
+
+.history__item:hover {
+  border-color: var(--border-focus);
+  transform: translateX(2px);
+}
+
+.history__thumb {
+  flex-shrink: 0;
+  width: 52px;
+  height: 52px;
+  padding: 4px;
+  background: #ffffff;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+}
+
+.history__thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  image-rendering: pixelated;
+}
+
+.history__meta {
+  flex: 1;
+  min-width: 0;
+}
+
+.history__text {
+  font-size: 0.88rem;
+  color: var(--text-primary);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.history__date {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  margin-top: 2px;
+}
+
+.history__actions {
+  display: flex;
+  gap: 6px;
+  flex-shrink: 0;
+}
+
+.history__btn {
+  width: 32px;
+  height: 32px;
+  display: grid;
+  place-items: center;
+  border-radius: 8px;
+  color: var(--text-secondary);
+  background: var(--bg-surface-2);
+  border: 1px solid var(--border);
+  font-size: 0.9rem;
+  transition: color 0.15s ease, border-color 0.15s ease, background 0.15s ease;
+}
+
+.history__btn:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
+.history__btn--danger:hover {
+  color: var(--error);
+  border-color: var(--error);
+  background: var(--error-soft);
+}
