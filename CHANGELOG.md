@@ -9,6 +9,7 @@ Format follows Keep a Changelog. Dates in UTC.
 - Target stack defined: Svelte 5 + Vite + `qrcode` + Supabase Auth + Postgres.
 - Stage 1 scaffold: Svelte 5 shell (`src/main.js`, `src/App.svelte`), `vite.config.js` (svelte only), `vercel.json` (dist).
 - Stage 2 design system: `src/lib/tokens.css` central tokens, `src/lib/app.css` BEM semantic layout.
+- Fix: bump `@sveltejs/vite-plugin-svelte` 4→6 to match Vite 6 peer (`vite ^6.3 || ^7`, `svelte ^5`).
 
 ### Changed
 - `.gitignore` extended: `build/`, `.svelte-kit/`, `.vercel/`, `.env*`, `PLAN.local.md`.
